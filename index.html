@@ -3,17 +3,41 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>WDD 131 - Dynamic Web Fundamentals - Ana Gabriely</title>
-        <meta name="description" content="wdd 131- dynamic web Fundamentals- Ana Gabriely Mendes dos Santos - home page">
+        <meta name="description" content="wdd 131- dynamic web Fundamentals- Ana Gabriely- Personal home page with web development content and resources">
         <meta name="author" content="Ana Gabriely Mendes dos Santos">
+        <title>WDD 131 - Dynamic Web Fundamentals - Ana Gabriely</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <script src="scripts/getdates.js"></script>
     </head>
     <body>
         <header>
+            <h1>Ana Gabriely - Web development Home Page</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/gabriely-santos-879a421a3/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=por" target="_blank">Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
         </header>
-        <main></main>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="#" alt="Ana Gabriely profile">
+                <p>something about me</p>
+            </section>
+
+            <section class="card">
+                <h2>My web Development Goals</h2>
+                <img src="#" alt="code on a screen">
+                <p> my goals </p>
+            </section>
+        </main>
         <footer>
-            <p>&copy; <span id="year"></span> &hearts; Temple Album |All Rights Reserved &hearts;</p>
-            <p>Last Modified: <span id="lastModified"></span></p>
+            <p>&copy; <span id="currentyear"></span> &hearts; Ana Gabriely - Brasil |All Rights Reserved &hearts;</p>
+            <p id="lastModified"></p>
         </footer>
     </body>
 </html>
