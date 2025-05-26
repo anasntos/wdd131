@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ana Gabriely Mendes dos Santos">
     <meta name="description" content="a page for a country that I wish to visit">
+    <link rel="stylesheet" href="styles/place.css">
     <title>Page country</title>
 </head>
 <body>
@@ -12,25 +13,46 @@
         <h1>Welcome to Seattle</h1>
     </header>
     <main>
-        <picture>
-            <source srcset="#" media="(max-width: 600px)">
-            <img src="#" alt="ghk">
+    <div class="hero-container">
+        <picture class="hero">
+            <source src="images/hero-small.webp" media="(max-width: 600px)">
+            <source src="images/hero-medium.webp" media="(max-width:1000px)">
+            <img src="images/hero-large.webp" alt="Seattle skyline with the Space Needle ">
         </picture>
+
         <!--about the place-->
         <section class="info">
-            <h2> About Seattle</h2>
-            <p>some interesting details about Seattle</p>
+            <h2>About Seattle</h2>
+            <p>Seattle is a vibrant city in the northwestern United States, located in the state of Washington. Known for its stunning natural scenery between mountains and water, it is famous for the Space Needle, its strong tech industry with companies like Amazon and Microsoft, and its rich cultural and musical scene. Seattle is also known for its rainy weather, cozy coffee shops, and innovative spirit, making it an important economic and cultural hub in the region.</p>
+            <ul>
+                <li>Population: 755.078</li>
+                <li>Area: 217 km²</li>
+                <li>Time zone: UTC -7</li>
+                <li>Calling Code: 206</li>
+            </ul>
         </section>
+
         <!--weather-->
         <section class="weather">
-            <h2>Weather <span class="wider-icon">⛅</span></h2>
-            <img src="images/weather.svg" alt="Weather icon" class="mobile-icon">
-            <p>Currently sunny, 24°C</p>
+            <h2>
+                Weather 
+                <span class="wider-icon" aria-label="partly sunny" role="img">⛅</span>
+            </h2>
+            <img src="images/weather.icon.svg" alt="Weather icon" class="mobile-icon">
+            <p><strong>Currently:</strong> Sunny, 24°C</p>
+            <ul>
+                <li>Humidity: 60%</li>
+                <li>Wind: 10 km/h</li>
+                <li>Feels like: 25°C</li>
+            </ul>
         </section>
-    </main>
+    </div>
+</main>
     <footer>
         <p>&copy; <span id="currentyear"></span> &hearts; Ana Gabriely - Brasil |All Rights Reserved &hearts;</p>
         <p id="lastModified"></p>
     </footer>
+
+     <script src="scripts/place.js" defer></script>
 </body>
 </html>
