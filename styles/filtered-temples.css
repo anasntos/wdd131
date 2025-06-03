@@ -21,23 +21,39 @@
   border-radius: 8px;
 }
 
-/* Hamburger styles */
+/* Hamburger button */
 .hamburger {
   font-size: 1.5rem;
   background: none;
   border: none;
   cursor: pointer;
   margin: 0.5rem;
+  display: block;
 }
 
-/* Hide menu by default (mobile) */
+/* Navigation mobile hidden */
 .navigation {
   display: none;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
-/* Show when open */
+/* Show when opened via JS */
 .navigation.open {
   display: flex;
+}
+
+/* Large screen styles */
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
