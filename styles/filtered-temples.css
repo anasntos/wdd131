@@ -1,0 +1,43 @@
+/* Base layout */
+.temple-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.temple-card {
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.temple-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Hamburger styles */
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+/* Hide menu by default (mobile) */
+.navigation {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Show when open */
+.navigation.open {
+  display: flex;
+}

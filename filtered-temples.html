@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WDD 131 - Temple Album</title>
+  <meta name="description" content="Picture album page of temple pictures" />
+  <meta name="author" content="Ana Gabriely Mendes dos Santos" />
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+ 
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="hamburgerBtn" class="hamburger">
+      <span id="hamburgerIcon">☰</span>
+    </button>
+    <nav class="navigation" id="primaryNav">
+      <a href="#" data-filter="home">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="templeContainer" class="temple-grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> &hearts; Temple Album | All Rights Reserved &hearts;</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+   <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
