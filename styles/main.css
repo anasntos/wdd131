@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #e0e7ff, #f5e0ff); /* Azul claro → roxo claro */
+  color: #333;
+  padding: 2rem;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4a00e0; /* Roxo vibrante */
+}
+
+/* Formulário */
+form {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+label,
+legend {
+  display: block;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #4a00e0;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+fieldset label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* Botão Submit */
+input[type="submit"] {
+  background-color: #4a00e0;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #6f00ff;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+/* Transições suaves */
+input,
+select,
+textarea,
+fieldset,
+input[type="submit"] {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito no foco dos campos */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #7a00cc;
+  box-shadow: 0 0 5px rgba(122, 0, 204, 0.5);
+  background-color: #f3f0ff;
+}
+
+/* Efeito no fieldset quando o mouse passa por cima */
+fieldset:hover {
+  background-color: #fdf8ff;
+  box-shadow: 0 0 10px rgba(122, 0, 204, 0.1);
+  border-radius: 10px;
+}
+
+/* Suavidade no botão */
+input[type="submit"]:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(79, 0, 153, 0.3);
+}

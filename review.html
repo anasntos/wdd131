@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmation</title>
+  <meta name="description" content="Product review confirmation page">
+  <meta name="author" content="Ana Gabriely Mendes dos Santos">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <h1>Thank You!</h1>
+  </header>
+
+  <main>
+    <p>Your review has been submitted successfully. We appreciate your feedback!</p>
+    <p><strong>Total Reviews Submitted from This Device:</strong> <span id="review-count">0</span></p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> &hearts; Ana Gabriely - Brasil | All Rights Reserved &hearts;</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/review.js"></script>
+  <script>
+    // Footer script (opcional, pode mover para um arquivo comum)
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+  </script>
+</body>
+</html>

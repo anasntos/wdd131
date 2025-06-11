@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Review Form</title>
+  <meta name="description" content="Week 5 assignment – Safe Song Product Review">
+  <meta name="author" content="Ana Gabriely Mendes dos Santos">
+
+  <!-- CSS global (cores azul + roxo que fizemos) -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <!-- ============== FORM ============== -->
+    <form method="get" action="review.html">
+      <!-- PRODUCT NAME (populado via JS) -->
+      <label for="productName">Product Name:</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product …</option>
+        <!-- options inseridos em scripts/form.js -->
+      </select>
+
+      <!-- OVERALL RATING -->
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <!-- Apenas o primeiro radio precisa do required -->
+        <label><input type="radio" id="rating1" name="rating" value="1" required> 1 ☆</label>
+        <label><input type="radio" id="rating2" name="rating" value="2"> 2 ☆☆</label>
+        <label><input type="radio" id="rating3" name="rating" value="3"> 3 ☆☆☆</label>
+        <label><input type="radio" id="rating4" name="rating" value="4"> 4 ☆☆☆☆</label>
+        <label><input type="radio" id="rating5" name="rating" value="5"> 5 ☆☆☆☆☆</label>
+      </fieldset>
+
+      <!-- INSTALL DATE -->
+      <label for="installDate">Date of Installation:</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <!-- USEFUL FEATURES -->
+      <fieldset>
+        <legend>Useful Features (check all that apply):</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="Easy Install"> Easy Install</label>
+        <label><input type="checkbox" id="feature2" name="features" value="User Friendly"> User Friendly</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Affordable"> Affordable</label>
+        <label><input type="checkbox" id="feature4" name="features" value="High Quality"> High Quality</label>
+      </fieldset>
+
+      <!-- WRITTEN REVIEW -->
+      <label for="reviewText">Written Review (optional):</label>
+      <textarea id="reviewText" name="reviewText" rows="4" placeholder="Share your experience…"></textarea>
+
+      <!-- USER NAME -->
+      <label for="userName">Your Name (optional):</label>
+      <input type="text" id="userName" name="userName">
+
+      <!-- SUBMIT -->
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> ♥ Ana Gabriely – Brasil | All Rights Reserved ♥</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <!-- JS para o select e datas do rodapé -->
+  <script src="scripts/form.js" defer></script>
+  <script>
+    /* footer info */
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+  </script>
+</body>
+</html>
