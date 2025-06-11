@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Nunito", sans-serif;
   line-height: 1.6;
   background: linear-gradient(to right, #e0e7ff, #f5e0ff); /* Azul claro → roxo claro */
   color: #333;
@@ -55,6 +55,10 @@ textarea {
   background-color: #f9f9f9;
 }
 
+select option[disabled] {
+  color: #999;
+}
+
 textarea {
   resize: vertical;
 }
@@ -86,11 +90,13 @@ input[type="submit"] {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 1.5rem;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 input[type="submit"]:hover {
   background-color: #6f00ff;
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(79, 0, 153, 0.3);
 }
 
 /* Rodapé */
@@ -98,8 +104,9 @@ footer {
   text-align: center;
   margin-top: 3rem;
   font-size: 0.9rem;
-  color: #666;
+  color: #444;
 }
+
 /* Transições suaves */
 input,
 select,
@@ -124,10 +131,6 @@ fieldset:hover {
   background-color: #fdf8ff;
   box-shadow: 0 0 10px rgba(122, 0, 204, 0.1);
   border-radius: 10px;
+  cursor: pointer;
 }
 
-/* Suavidade no botão */
-input[type="submit"]:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 10px rgba(79, 0, 153, 0.3);
-}
